@@ -2,6 +2,15 @@
 
 namespace Psicologiaymente\CloudflareGeoIp;
 
+/**
+ * @property string    $iso_code
+ * @property string    $isoCode
+ * @property string    $state
+ * @property string    $state_name
+ * @property string    $stateName
+ * @property float|int $lat
+ * @property float|int $lon
+ */
 class Location
 {
     public function __construct(
@@ -26,6 +35,7 @@ class Location
             'isoCode'    => 'country',
             'state'      => 'regionCode',
             'state_name' => 'region',
+            'stateName'  => 'region',
             'lat'        => 'latitude',
             'lon'        => 'longitude',
         ];

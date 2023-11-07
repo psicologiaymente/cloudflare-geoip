@@ -1,0 +1,18 @@
+providers:
+  - Psicologiaymente\CloudflareGeoIp\CloudflareGeoIpServiceProvider
+
+migrations:
+
+seeders:
+
+workbench:
+  start: '/'
+  install: true
+  discovers:
+    web: true
+    api: false
+    commands: false
+    views: false
+  build: []
+  assets: []
+  sync: []

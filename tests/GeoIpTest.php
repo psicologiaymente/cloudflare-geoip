@@ -11,7 +11,6 @@ class GeoIpTest extends TestCase
     {
         $location = GeoIp::getLocation();
 
-        $this->assertEquals('US', $location->iso_code);
         $this->assertEquals('US', $location->country);
         $this->assertEquals('America/New_York', $location->timezone);
         $this->assertEquals('CT', $location->regionCode);
@@ -35,6 +34,31 @@ class GeoIpTest extends TestCase
         $location = GeoIp::getLocation();
 
         $this->assertEquals($headerValue, $location->{$property});
+    }
+
+    /** @test */
+    public function it_returns_pseudo_fields_from_location(): void
+    {
+        $location = GeoIp::getLocation();
+
+        $this->assertEquals('US', $location->iso_code);
+        $this->assertEquals('US', $location->isoCode);
+        $this->assertEquals('CT', $location->state);
+        $this->assertEquals('Connecticut', $location->state_name);
+        $this->assertEquals('Connecticut', $location->stateName);
+        $this->assertEquals(41.31, $location->lat);
+        $this->assertEquals(-72.92, $location->lon);
+    }
+
+    /** @test */
+    public function throws_error_if_property_does_not_exist(): void
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('Property foo does not exist on this object.');
+
+        $location = GeoIp::getLocation();
+
+        $location->foo;
     }
 
     public static function cloudflareHeadersProvider(): array
