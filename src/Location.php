@@ -48,4 +48,20 @@ class Location
 
         return $this->{$replications[$name]};
     }
+
+    public function toArray(): array
+    {
+        return array_filter([
+            'ip'         => $this->ip,
+            'country'    => $this->country,
+            'city'       => $this->city,
+            'continent'  => $this->continent,
+            'latitude'   => $this->latitude,
+            'longitude'  => $this->longitude,
+            'postalCode' => $this->postalCode,
+            'region'     => $this->region,
+            'regionCode' => $this->regionCode,
+            'timezone'   => $this->timezone,
+        ]);
+    }
 }

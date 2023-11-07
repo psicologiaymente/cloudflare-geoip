@@ -38,6 +38,11 @@ class GeoIpTest extends TestCase
         $this->assertEquals($headerValue, $location->{$property});
         $this->assertEquals('ES', $location->country);
         $this->assertEquals('172.0.23.2', $location->ip);
+        $this->assertEquals([
+            'ip'         => '172.0.23.2',
+            'country'    => 'ES',
+            $property    => $headerValue,
+        ], $location->toArray());
     }
 
     /** @test */

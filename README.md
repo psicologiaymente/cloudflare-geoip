@@ -61,5 +61,7 @@ class RegisterController extends Controller {
     +postal_code: '06510' // same as postal_code
     +lat: '41.31' // same as latitude
     +lon: -72.92 // same as longitude
+
+    +toArray(): array
 }
 ```
