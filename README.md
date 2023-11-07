@@ -58,6 +58,7 @@ class RegisterController extends Controller {
     +state: 'CT' // same as regionCode
     +state_name: 'Connecticut' // same as region
     +stateName: 'Connecticut' // same as region
+    +postal_code: '06510' // same as postal_code
     +lat: '41.31' // same as latitude
     +lon: -72.92 // same as longitude
 }

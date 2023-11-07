@@ -30,10 +30,14 @@ class GeoIpTest extends TestCase
     public function it_returns_location_from_cloudflare_headers($header, $headerValue, $property): void
     {
         $this->app['request']->headers->set($header, $headerValue);
+        $this->app['request']->headers->set('Cf-Connecting-Ip', '172.0.23.2');
+        $this->app['request']->headers->set('Cf-Ipcountry', 'ES');
 
         $location = GeoIp::getLocation();
 
         $this->assertEquals($headerValue, $location->{$property});
+        $this->assertEquals('ES', $location->country);
+        $this->assertEquals('172.0.23.2', $location->ip);
     }
 
     /** @test */
@@ -48,6 +52,7 @@ class GeoIpTest extends TestCase
         $this->assertEquals('Connecticut', $location->stateName);
         $this->assertEquals(41.31, $location->lat);
         $this->assertEquals(-72.92, $location->lon);
+        $this->assertEquals('06510', $location->postal_code);
     }
 
     /** @test */
@@ -64,9 +69,7 @@ class GeoIpTest extends TestCase
     public static function cloudflareHeadersProvider(): array
     {
         return [
-            ['Cf-Connecting-Ip', '192.182.88.29', 'ip'],
             ['Cf-Ipcity', 'Madrid', 'city'],
-            ['Cf-Ipcountry', 'ES', 'country'],
             ['Cf-Ipcontinent', 'EU', 'continent'],
             ['Cf-Iplatitude', 02.4165, 'latitude'],
             ['Cf-Iplongitude', -3.70256, 'longitude'],
