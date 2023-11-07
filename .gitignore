@@ -1,0 +1,10 @@
+.idea
+build
+composer.lock
+docs
+vendor
+coverage.clover
+.DS_Store
+.php_cs.cache
+.phpunit.result.cache
+.phpunit.cache/

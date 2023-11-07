@@ -1,0 +1,86 @@
+{
+  "preset": "laravel",
+  "exclude": ["bootstrap/*", "storage/*", "resource/view/mail"],
+  "notName": ["*.blade.php", "index.php", "server.php", "_ide_helper.php"],
+  "rules": {
+    "align_multiline_comment": true,
+    "array_push": true,
+    "backtick_to_shell_exec": true,
+    "binary_operator_spaces": {
+      "default": "single_space",
+      "operators": {
+        "=>": "align"
+      }
+    },
+    "new_with_braces": {
+      "anonymous_class": false,
+      "named_class": false
+    },
+    "combine_consecutive_issets": true,
+    "combine_consecutive_unsets": true,
+    "combine_nested_dirname": true,
+    "comment_to_phpdoc": true,
+    "dir_constant": true,
+    "doctrine_annotation_braces": true,
+    "doctrine_annotation_indentation": true,
+    "ereg_to_preg": true,
+    "explicit_indirect_variable": true,
+    "explicit_string_variable": true,
+    "function_to_constant": true,
+    "heredoc_indentation": true,
+    "method_chaining_indentation": true,
+    "modernize_types_casting": true,
+    "multiline_comment_opening_closing": true,
+    "no_break_comment": true,
+    "no_null_property_initialization": true,
+    "no_php4_constructor": true,
+    "no_superfluous_phpdoc_tags": true,
+    "no_unneeded_final_method": true,
+    "no_unset_on_property": true,
+    "no_useless_sprintf": true,
+    "non_printable_character": true,
+    "nullable_type_declaration_for_default_null_value": true,
+    "operator_linebreak": true,
+    "ordered_interfaces": true,
+    "ordered_traits": true,
+    "php_unit_construct": true,
+    "php_unit_expectation": true,
+    "php_unit_fqcn_annotation": true,
+    "php_unit_method_casing": {
+      "case": "snake_case"
+    },
+    "phpdoc_add_missing_param_annotation": true,
+    "phpdoc_align": true,
+    "phpdoc_tag_type": true,
+    "phpdoc_no_alias_tag": true,
+    "phpdoc_order": true,
+    "phpdoc_return_self_reference": true,
+    "phpdoc_separation": true,
+    "phpdoc_trim_consecutive_blank_line_separation": true,
+    "phpdoc_types_order": true,
+    "phpdoc_var_annotation_correct_order": true,
+    "return_assignment": true,
+    "self_static_accessor": true,
+    "simple_to_complex_string_variable": true,
+    "simplified_null_return": true,
+    "single_space_after_construct": true,
+    "standardize_increment": true,
+    "ternary_to_null_coalescing": true,
+    "types_spaces": true,
+    "concat_space": {
+      "spacing": "one"
+    },
+    "lowercase_keywords": true,
+    "no_extra_blank_lines": {
+      "tokens": ["extra", "throw", "use", "use_trait"]
+    },
+    "no_trailing_comma_in_list_call": true,
+    "no_trailing_comma_in_singleline_array": true,
+    "phpdoc_summary": true,
+    "phpdoc_to_comment": true,
+    "self_accessor": true,
+    "single_trait_insert_per_statement": true,
+    "use_arrow_functions": true,
+    "psr_autoloading": true
+  }
+}
