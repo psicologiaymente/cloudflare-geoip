@@ -23,7 +23,7 @@ php artisan vendor:publish --tag=cloudflare-geoip-config
 
 namespace App\Http\Controllers;
 
-use Psicologiaymente\CloudflareGeoIp\Facades\GeoIp;
+use PsicologiaYMente\CloudflareGeoIp\Facades\GeoIp;
 use App\Models\Users;
 
 class RegisterController extends Controller {
@@ -41,7 +41,7 @@ class RegisterController extends Controller {
 #### Location Object
 
 ```php
-\Psicologiaymente\CloudflareGeoIp\Location {
+\PsicologiaYMente\CloudflareGeoIp\Location {
     +ip: "192.182.88.29"
     +city: "New Haven"
     +country: "US"

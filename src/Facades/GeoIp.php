@@ -1,13 +1,13 @@
 <?php
 
-namespace Psicologiaymente\CloudflareGeoIp\Facades;
+namespace PsicologiaYMente\CloudflareGeoIp\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \Psicologiaymente\CloudflareGeoIp\Location getLocation()
+ * @method static \PsicologiaYMente\CloudflareGeoIp\Location getLocation()
  *
- * @see \Psicologiaymente\CloudflareGeoIp\GeoIp
+ * @see \PsicologiaYMente\CloudflareGeoIp\GeoIp
  */
 class GeoIp extends Facade
 {

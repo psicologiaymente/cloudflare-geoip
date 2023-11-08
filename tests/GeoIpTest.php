@@ -1,8 +1,8 @@
 <?php
 
-namespace Psicologiaymente\CloudflareGeoIp\Tests;
+namespace PsicologiaYMente\CloudflareGeoIp\Tests;
 
-use Psicologiaymente\CloudflareGeoIp\Facades\GeoIp;
+use PsicologiaYMente\CloudflareGeoIp\Facades\GeoIp;
 
 class GeoIpTest extends TestCase
 {

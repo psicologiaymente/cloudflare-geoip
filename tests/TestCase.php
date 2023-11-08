@@ -1,9 +1,9 @@
 <?php
 
-namespace Psicologiaymente\CloudflareGeoIp\Tests;
+namespace PsicologiaYMente\CloudflareGeoIp\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Psicologiaymente\CloudflareGeoIp\CloudflareGeoIpServiceProvider;
+use PsicologiaYMente\CloudflareGeoIp\CloudflareGeoIpServiceProvider;
 
 abstract class TestCase extends OrchestraTestCase
 {

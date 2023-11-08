@@ -1,5 +1,5 @@
 providers:
-  - Psicologiaymente\CloudflareGeoIp\CloudflareGeoIpServiceProvider
+  - PsicologiaYMente\CloudflareGeoIp\CloudflareGeoIpServiceProvider
 
 migrations:
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Psicologiaymente\CloudflareGeoIp;
+namespace PsicologiaYMente\CloudflareGeoIp;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

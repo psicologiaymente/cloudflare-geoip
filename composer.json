@@ -10,12 +10,12 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Psicologiaymente\\CloudflareGeoIp\\": "src/"
+			"PsicologiaYMente\\CloudflareGeoIp\\": "src/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Psicologiaymente\\CloudflareGeoIp\\Tests\\": "tests/"
+			"PsicologiaYMente\\CloudflareGeoIp\\Tests\\": "tests/"
 		}
 	},
 	"require": {
@@ -30,7 +30,7 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"Psicologiaymente\\CloudflareGeoIp\\CloudflareGeoIpServiceProvider"
+				"PsicologiaYMente\\CloudflareGeoIp\\CloudflareGeoIpServiceProvider"
 			]
 		}
 	},

@@ -1,6 +1,6 @@
 <?php
 
-namespace Psicologiaymente\CloudflareGeoIp;
+namespace PsicologiaYMente\CloudflareGeoIp;
 
 /**
  * @property string         $iso_code
