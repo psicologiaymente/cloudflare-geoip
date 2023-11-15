@@ -10,7 +10,7 @@ class CloudflareGeoIpServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/cloudflare-geoip.php', 'cloudflare-geoip');
 
-        $this->app->singleton('cloudflare-geoip', fn ($app) => new GeoIP(
+        $this->app->singleton('cloudflare-geoip', fn ($app) => new GeoIp(
             $app->make('request'),
             $app->config->get('cloudflare-geoip'))
         );
